@@ -10,4 +10,10 @@ export class AppController {
   redirect(): void {
     return ;
   }
+
+
+  @Get('health')
+  getHealth(): string{
+    return 'it is working';
+  }
 }
